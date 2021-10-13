@@ -14,8 +14,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "gsap": "^3.3.4",
     "nuxt": "^2.13.3",
-    "splitting": "^1.0.6",
-    "three": "^0.113.2"
+    "splitting": "^1.0.6"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

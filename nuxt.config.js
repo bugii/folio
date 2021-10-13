@@ -1,5 +1,6 @@
 export default {
-  mode: "universal",
+  target: "static",
+  generate: { routes: ["/marti", "/mapeni", "/toni"] },
   /*
    ** Headers of the page
    */
@@ -11,25 +12,25 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
-      }
+        content: process.env.npm_package_description || "",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap"
+          "https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap",
       },
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,800&display=swap"
-      }
-    ]
+          "https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,800&display=swap",
+      },
+    ],
   },
   styleResources: {
-    scss: ["./assets/scss/vars.scss"]
+    scss: ["./assets/scss/vars.scss"],
   },
   /*
    ** Customize the progress-bar color
@@ -59,6 +60,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 };
