@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Andreas Marti und Partner Architekten",
+    "slug": "marti",
+    "link": "https://andreas-marti.ch",
+    "color": "230, 230, 230",
+    "image": "/img/marti-frontpage.jpg",
+    "text": "Andreas Marti und Partner Architekten is an architecture firm located in the middle of the old town of Aarau. Together with them, we developed the design of their new website before implementing everything in code. The website has a very minimalistic design, focusing on the images and the different ways to present the projects (List and Masonry). The site is equipped with a simple CMS (Netlify CMS) that allows the office to easily add new projects and update images from existing projects. The order of projects on the landing page is random to make the site different for each visit.",
+    "images": [
+      "/img/marti/image-1.jpg",
+      "/img/marti/image-2.jpg",
+      "/img/marti/image-3.jpg"
+    ]
+  },
+  {
+    "title": "Mapeni Lodge",
+    "slug": "mapeni",
+    "link": "https://mapenilodge.com",
+    "color": "149, 160, 131",
+    "image": "/img/mapeni-frontpage.jpeg",
+    "text": "Mapeni Lodge is a small lodge built by my parents in Tanzania. The family project offered me the opportunity to create the website for the lodge. On my first visit to Tanzania, I took photos and made sketches of the lodge and its facilities. After getting to know the beautiful lodge, my family, and the staff, I started working on the website at home. Since it is a personal project and many of our friends are not so powerful in English, the website was multilingual for German and English. The goal was to create a very personal and inviting website for the heart project of my parents."
+  },
+  {
+    "title": "TONI Digital Insurance Solutions AG",
+    "slug": "toni",
+    "link": "https://tonidigital.ch",
+    "color": "148, 214, 244",
+    "image": "/img/toni-frontpage.png",
+    "text": "As part of my job at TONI Digital, I was responsible for a new website for what was then a relatively small start-up in the fintech industry. Since we already had a previous website that we could use as a starting point for the new website, we began by developing a new logo and corporate design (CD). The backend CMS allows non-technical staff to customize content on the site, such as team members and job postings. The website is hosted on a CDN to ensure fast page load times, and images are converted/compressed using Cloudinary."
+  }
+]
