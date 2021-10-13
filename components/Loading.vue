@@ -28,25 +28,25 @@ export default {
     setTimeout(() => {
       const tl = gsap.timeline();
       tl.to(".other", 0.5, {
-        opacity: 0
+        opacity: 0,
       });
       tl.to(".D", 0.5, {
-        x: "6.75rem"
+        x: "6.75rem",
       });
       tl.to(
         ".B",
         0.5,
         {
-          x: "1.75rem"
+          x: "1.75rem",
         },
         "-=.5"
       );
       tl.to(".gray-overlay", 1, {
         x: 0,
-        onComplete: () => this.$store.dispatch("initialLoadFinished")
+        onComplete: () => this.$store.dispatch("initialLoadFinished"),
       });
     }, 1000);
-  }
+  },
 };
 </script>
 
@@ -61,6 +61,8 @@ export default {
   .gray-overlay {
     transform: translateX(120%);
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: $bg-color;

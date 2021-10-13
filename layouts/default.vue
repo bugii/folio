@@ -17,11 +17,11 @@ export default {
     Loading,
     Nav,
   },
-  methods: {
-    loadingFinished() {
-      this.loading = false;
-    },
-  },
+  // methods: {
+  //   loadingFinished() {
+  //     this.loading = false;
+  //   },
+  // },
   mounted() {
     console.log(this.$store.getters.hasInitialPageLoaded);
   },
