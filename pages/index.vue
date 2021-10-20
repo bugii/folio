@@ -35,8 +35,15 @@ export default {
     backgroundImageContainer.style.opacity = "1";
     backgroundImageContainer.style.filter = "grayscale(100%)";
     backgroundImageContainer.style.webkitFilter = "grayscale(100%)";
+
+    // console.log(backgroundImageContainer.style.opacity);
+
+    // setTimeout(() => {
+    //   console.log(backgroundImageContainer.style.opacity);
+    // }, 2000);
   },
 
+  // Still no idea what is going on here...!? this is required otherwise the page transition from _id is fired again...
   transition: {
     enter(el, done) {
       console.log("index: enter");

@@ -39,14 +39,20 @@ export default {
       backgroundImageContainer.style.backgroundImage = "none";
     },
     openProject() {
+      // const projectsTextContainer = document.querySelector(
+      //   ".projects-container"
+      // );
+      // projectsTextContainer.style.display = "none";
+
       const backgroundImageContainer = document.querySelector(".image-canvas");
+
       gsap.to(backgroundImageContainer, {
         width: "100%",
         height: "100%",
         duration: 1,
         filter: "grayscale(0%)",
         "-webkit-filter": "grayscale(0%)",
-        onComplete: () => this.$router.push(this.slug),
+        onComplete: () => this.$router.push(`projects/${this.slug}`),
       });
     },
   },

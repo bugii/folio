@@ -89,14 +89,15 @@
 
 <script>
 import gsap from "gsap";
-import Arrow from "../components/Arrow.vue";
+import Arrow from "../../components/Arrow.vue";
 
 export default {
+  name: "id",
   components: {
     Arrow,
   },
   asyncData({ route }) {
-    const projects = require("../assets/content/projects.json");
+    const projects = require("../../assets/content/projects.json");
 
     let filteredProject, nextProject;
 
@@ -116,6 +117,11 @@ export default {
   transition: {
     enter(el, done) {
       console.log("id: enter");
+
+      // gsap.to(document.querySelector(".projects-container"), {
+      //   opacity: 0,
+      //   duration: 0.25,
+      // });
 
       gsap.to(document.querySelector(".image-canvas"), {
         opacity: 0,
@@ -174,16 +180,16 @@ export default {
   }
 
   .full-page-wrapper {
-    height: calc(100vh - 10rem);
-    max-height: 80rem;
+    // height: calc(100vh - 10rem);
+    // max-height: 80rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    @media screen and (max-width: 800px) {
-      height: auto;
-      max-height: auto;
-    }
+    // @media screen and (max-width: 800px) {
+    //   height: auto;
+    //   max-height: auto;
+    // }
 
     .second-half {
       align-items: flex-end;

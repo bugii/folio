@@ -28,7 +28,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  transition: {
+    enter(el, done) {
+      console.log("about: enter");
+      done();
+    },
+    leave(el, done) {
+      console.log("about: leave");
+      done();
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

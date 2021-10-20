@@ -1,6 +1,6 @@
 export default {
   target: "static",
-  generate: { routes: ["/marti", "/mapeni", "/toni"] },
+  generate: { routes: ["projects/marti", "projects/toni"] },
   /*
    ** Headers of the page
    */
@@ -29,6 +29,18 @@ export default {
       },
     ],
   },
+
+  pageTransition: {
+    name: "default",
+    mode: "out-in",
+    enter(el) {
+      console.log("default enter...");
+    },
+    leave(el) {
+      console.log("default leave...");
+    },
+  },
+
   styleResources: {
     scss: ["./assets/scss/vars.scss"],
   },
